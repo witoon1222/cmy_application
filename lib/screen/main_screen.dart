@@ -52,9 +52,9 @@ class _MainScreenState extends State<MainScreen> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: _selectedIndex,
-        onTap: (index) {
+        onTap: (Value) {
           setState(() {
-            _selectedIndex = index;
+            _selectedIndex = Value;
           });
         },
         items: bottomMenu.map((menu) {
